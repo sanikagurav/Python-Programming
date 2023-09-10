@@ -1,0 +1,17 @@
+#program to calculate average hight from list of height
+heights = input("Enter all the heights separated by space : ")
+height_list = heights.split()
+count = 0
+for height in height_list:
+    count = count + 1
+print("The length of list is : ", count)
+
+for i in range(0,count):
+    height_list[i]=int(height_list[i])
+    
+total = 0
+for person in height_list:
+    total += person
+avg = total/count
+print("Average height is : ", round(avg))
+#print(height_list)
