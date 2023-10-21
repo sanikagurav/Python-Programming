@@ -1,0 +1,14 @@
+def double_characters(input_string):
+    doubled_string = ''
+    for char in input_string:
+        doubled_string += char * 2
+    return doubled_string
+
+# Example usage
+input_string = "now"
+result = double_characters(input_string)
+print(result)  # Output: "nnooww"
+
+input_string = "123a!"
+result = double_characters(input_string)
+print(result)  # Output: "112233aa!!"
