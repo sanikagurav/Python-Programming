@@ -1,0 +1,11 @@
+def filter_integers(input_list):
+    filtered_list = []
+    for item in input_list:
+        if isinstance(item, int) and item >= 0:
+            filtered_list.append(item)
+    return filtered_list
+
+# Example usage
+input_list = [1, "apple", 3, "orange", 5, "banana", 7]
+result = filter_integers(input_list)
+print(result)  # Output: [1, 3, 5, 7]
