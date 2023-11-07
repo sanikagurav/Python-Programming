@@ -1,0 +1,11 @@
+def generate_square_dict(n):
+    square_dict = {}
+    for i in range(1, n + 1):
+        square_dict[i] = i * i
+    return square_dict
+
+n = int(input("Enter an integer value for 'n': "))
+square_dict = generate_square_dict(n)
+
+print("Dictionary containing squares from 1 to", n, "is:")
+print(square_dict)
