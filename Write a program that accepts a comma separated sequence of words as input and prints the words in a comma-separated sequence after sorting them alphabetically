@@ -1,0 +1,12 @@
+def sort_words(input_string):
+    words = input_string.split(',')
+    sorted_words = sorted(words)
+    result = ','.join(sorted_words)
+    return result
+
+# Accept input from the user
+input_sequence = input("Enter a comma-separated sequence of words: ")
+
+# Call the function and print the result
+sorted_sequence = sort_words(input_sequence)
+print("Sorted words:", sorted_sequence)
