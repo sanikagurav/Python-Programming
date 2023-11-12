@@ -1,0 +1,15 @@
+def capitalize_lines():
+    lines = []
+    while True:
+        line = input("Enter a line (or 'exit' to finish): ")
+        if line.lower() == 'exit':
+            break
+        else:
+            lines.append(line.upper())
+
+    print("\nCapitalized Lines:")
+    for capitalized_line in lines:
+        print(capitalized_line)
+
+if __name__ == "__main__":
+    capitalize_lines()
