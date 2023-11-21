@@ -1,0 +1,23 @@
+def count_letters_and_digits(sentence):
+    # Initialize counters
+    letter_count = 0
+    digit_count = 0
+
+    # Iterate through each character in the sentence
+    for char in sentence:
+        # Check if the character is a letter
+        if char.isalpha():
+            letter_count += 1
+        # Check if the character is a digit
+        elif char.isdigit():
+            digit_count += 1
+
+    # Display the results
+    print(f"Number of letters: {letter_count}")
+    print(f"Number of digits: {digit_count}")
+
+# Get input from the user
+user_sentence = input("Enter a sentence: ")
+
+# Call the function with the user's input
+count_letters_and_digits(user_sentence)
