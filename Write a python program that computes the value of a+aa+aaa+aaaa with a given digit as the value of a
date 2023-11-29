@@ -1,0 +1,21 @@
+def compute_expression(a):
+    # Convert the digit to a string for concatenation
+    a_str = str(a)
+
+    # Compute the values a, aa, aaa, aaaa
+    term1 = int(a_str)
+    term2 = int(a_str * 2)
+    term3 = int(a_str * 3)
+    term4 = int(a_str * 4)
+
+    # Compute the sum
+    result = term1 + term2 + term3 + term4
+
+    return result
+
+# Input a digit
+a = int(input("Enter a digit: "))
+
+# Compute and print the result
+result = compute_expression(a)
+print(f"The result of {a} + {a}{a} + {a}{a}{a} + {a}{a}{a}{a} is: {result}")
