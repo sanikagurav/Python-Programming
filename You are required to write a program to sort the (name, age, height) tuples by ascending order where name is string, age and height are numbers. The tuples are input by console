@@ -1,0 +1,26 @@
+# Function to sort tuples based on name, age, and height
+def sort_tuples(tuples_list):
+    sorted_tuples = sorted(tuples_list, key=lambda x: (x[0], x[1], x[2]))
+    return sorted_tuples
+
+# Function to take input for tuples
+def get_input():
+    tuples_list = []
+    n = int(input("Enter the number of tuples: "))
+    
+    for i in range(n):
+        name = input("Enter name: ")
+        age = int(input("Enter age: "))
+        height = float(input("Enter height: "))
+        tuples_list.append((name, age, height))
+    
+    return tuples_list
+
+# Main program
+if __name__ == "__main__":
+    tuples_list = get_input()
+    sorted_tuples = sort_tuples(tuples_list)
+
+    print("\nSorted Tuples:")
+    for tup in sorted_tuples:
+        print(tup)
