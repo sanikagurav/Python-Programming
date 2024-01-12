@@ -1,0 +1,14 @@
+def putNumbers(n):
+    i = 0
+    while i < n:
+        if i % 7 == 0:
+            yield i
+        i += 1
+
+# Example usage:
+if __name__ == "__main__":
+    n = int(input("Enter the value of n: "))
+    
+    # Using the generator
+    for num in putNumbers(n):
+        print(num)
