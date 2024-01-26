@@ -1,0 +1,29 @@
+def word_frequency(input_string):
+    # Split the input string into words
+    words = input_string.split()
+
+    # Create an empty dictionary to store word frequencies
+    word_freq = {}
+
+    # Count the frequency of each word
+    for word in words:
+        # Remove punctuation marks
+        word = word.strip('.,?')
+
+        # Convert the word to lowercase to treat words like 'Python' and 'python' the same
+        word = word.lower()
+
+        # Update the word frequency
+        word_freq[word] = word_freq.get(word, 0) + 1
+
+    # Sort the dictionary by keys
+    sorted_word_freq = sorted(word_freq.items())
+
+    # Print the word frequencies
+    for word, freq in sorted_word_freq:
+        print(f"{word}:{freq}")
+
+
+# Test the function with the provided input
+input_string = "New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3."
+word_frequency(input_string)
