@@ -1,0 +1,14 @@
+class MyClass:
+    # Class parameter
+    class_param = "I am a class parameter"
+
+    def __init__(self, instance_param):
+        # Instance parameter
+        self.instance_param = instance_param
+
+# Creating an instance of MyClass
+obj = MyClass("I am an instance parameter")
+
+# Accessing and printing the class parameter and instance parameter
+print("Class Parameter:", MyClass.class_param)
+print("Instance Parameter:", obj.instance_param)
