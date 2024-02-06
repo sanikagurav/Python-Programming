@@ -1,0 +1,22 @@
+def concatenate_strings(str1, str2):
+    # Convert strings to lists of characters
+    list1 = list(str1)
+    list2 = list(str2)
+    
+    # Extend the first list with characters from the second list
+    list1.extend(list2)
+    
+    # Join the characters to form a single string
+    concatenated_string = ''.join(list1)
+    
+    return concatenated_string
+
+# Take input from the user
+string1 = input("Enter the first string: ")
+string2 = input("Enter the second string: ")
+
+# Concatenate the strings
+result = concatenate_strings(string1, string2)
+
+# Print the concatenated string
+print("Concatenated string:", result)
