@@ -1,0 +1,9 @@
+def reverse_string(input_string):
+    # Using slicing to reverse the string
+    reversed_string = input_string[::-1]
+    return reversed_string
+
+# Test the function
+input_string = input("Enter a string to reverse: ")
+reversed_string = reverse_string(input_string)
+print("Reversed string:", reversed_string)
