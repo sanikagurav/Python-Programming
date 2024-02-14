@@ -1,0 +1,9 @@
+# Define a list of integers
+int_list = [1, 2, 3, 4, 5]
+
+# Convert each integer element to a string
+str_list = [str(num) for num in int_list]
+
+# Print the converted list
+print("Original List of Integers:", int_list)
+print("Converted List of Strings:", str_list)
